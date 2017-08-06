@@ -14,3 +14,7 @@ For excuting client program, run the command below on terminal:
 java -jar SimpleNetworkingClient.jar server_ip
 
 Notice: server_ip in the command above is the ip of server that client should connect.
+
+After running server and clients you can login on clients using correct usernames and passwords, then you can send messages to other online clients.
+
+Notice: I don't implement delivering or caching methods, so you can do it for yourself if you want it.
