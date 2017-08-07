@@ -4,12 +4,18 @@ In this project I implement a simple client and server using java that communica
 I use JSON to serialize I/O of sockets.
 
 For running a network of hosts you can use mininet or any thing else that represents different ips for different hosts.
+I use mininet so I implement a topology for my network in setnet.py file using python.
+You can run your network using mininet with command below on terminal:
+sudo mn --custom ./setnet.py --topo mytopo
 
-For running server go to /SimpleNetworking/out/artifacts/SimpleNetworkingServer then you can see list of users and passwords in users.txt file that you can change it for yourself.
+In mininet, for running terminal of each host use the command below, example for host 1:
+xterm h1
+
+For running server go to ./SimpleNetworking/out/artifacts/SimpleNetworkingServer then you can see list of users and passwords in users.txt file that you can change it for yourself.
 For excuting server program, run the command below on terminal:
 java -jar SimpleNetworkingServer.jar
 
-For running client go to /SimpleNetworking/out/artifacts/SimpleNetworkingClient.
+For running client go to ./SimpleNetworking/out/artifacts/SimpleNetworkingClient.
 For excuting client program, run the command below on terminal:
 java -jar SimpleNetworkingClient.jar server_ip
 
